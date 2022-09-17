@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -7,7 +18,7 @@ package com.koneksi;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.SQLException; //komen
 public class koneksi {
     private static Connection con;
     public static Connection getcon(){
@@ -20,6 +31,7 @@ public class koneksi {
                 con = DriverManager.getConnection(url, username, password);
         } catch (SQLException e){
             System.out.println(e);
+            
         }
     }
     return con;    
